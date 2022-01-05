@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/fonts/style.css">
 
     <!-- CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,17 +21,20 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container">
+      <nav class="container ">
         <a class="logo" href="#">Ateliê<span>Meire</span>Arte</a>
         <div class="menu">
-         <ul>
-           <li><a href="#home">Inicío</a></li>
-           <li><a href="#about">Sobre</a></li>
-           <li><a href="#services">Serviços</a></li>
-           <li><a href="#documents">Depoimentos</a></li>
-           <li><a href="#contact">Contato</a></li>
+         <ul class="grid">
+           <li><a class="title" href="#home">Inicío</a></li>
+           <li><a class="title" href="#about">Sobre</a></li>
+           <li><a class="title" href="#services">Serviços</a></li>
+           <li><a class="title" href="#documents">Depoimentos</a></li>
+           <li><a class="title" href="#contact">Contato</a></li>
          </ul>
         </div>
+
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -43,7 +47,7 @@
             />
           </div>
           <div class="text">
-            <h1>Artesanato em Wooden Box</h1>
+            <h2  class="title">Artesanato em Wooden Box</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
               neque ipsam unde consequatur tempora nesciunt ut consequuntur, aut
