@@ -74,6 +74,15 @@ body {
     hsla(var(--hue), 65%, 88%, 0.34) 100%
   );
 }
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1) 
+  );
+}
 /** FIM - BASE **/
 
 /** INÍCIO - LAYOUT **/
@@ -89,6 +98,10 @@ body {
 
 .section {
   padding: 5rem 0;
+}
+
+.section .title{
+  margin-bottom: 1rem;
 }
 
 #header {
@@ -162,6 +175,7 @@ nav .menu {
   visibility: hidden;
 }
 
+/* * INÍCIO - MENU * */
 /*Mostrar Menu*/
 nav.show .menu {
   opacity: 1;
@@ -198,6 +212,7 @@ nav.show .icon-close{
   visibility: visible;
   opacity: 1;
 }
+/* * FIM - MENU * */
 
 /*Toogle Menu*/
 .toggle{
@@ -246,16 +261,52 @@ nav.show .icon-close{
   text-align: center;
 }
 
-#home .text h1 {
+#about .text h1 {
   margin-bottom: 1rem;
 }
 
-#home .text p {
+#about .text p {
   margin-bottom: 2rem;
   max-width: 100%;
 }
 /* * FIM - HOME * */
 
-/* * INÍCIO - MENU * */
+/* * INÍCIO -  ABOUT * */
+#about {
+  background: whitesmoke;
+}
 
-/* * FIM - MENU * */
+#about .container {
+  margin: 0;
+}
+
+#about .image {
+  position: relative;
+}
+
+#about .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#about .image img {
+  position: relative;
+}
+
+#home .image img,
+#about .image::before {
+  border-radius: 0.25rem;
+}
+
+#about .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+/* * FIM -  ABOUT * */
+
