@@ -99,14 +99,12 @@ h1 {
   width: 100%;
 }
 
-nav {
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+main {
+  margin-top: calc(var(--header-height) + 2rem);
 }
+/** FIM - LAYOUT **/
 
+/** LOGO **/
 .logo {
   font: 700 1.31rem 'Poppins', sans-serif;
   color: var(--title-color);
@@ -116,10 +114,15 @@ nav {
   color: var(--base-color);
 }
 
-main {
-  margin-top: var(--header-height);
+/** NAVIGATION **/
+nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
-/** FIM - LAYOUT **/
+
 
 /** INÍCIO - HOME **/
 #home {
@@ -170,3 +173,7 @@ main {
   max-width: 100%;
 }
 /* * FIM - HOME * */
+
+/* * INÍCIO - MENU * */
+
+/* * FIM - MENU * */
