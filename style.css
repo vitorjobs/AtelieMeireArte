@@ -185,6 +185,12 @@ nav ul li a:hover::after{
 nav .menu {
   opacity: 0;
   visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
 }
 
 /* * INÍCIO - MENU * */
@@ -192,6 +198,9 @@ nav .menu {
 nav.show .menu {
   opacity: 1;
   visibility: visible;
+
+  display: grid;
+  place-content: center;
 
   background: var(--body-color);
   height: 100vh;
@@ -201,10 +210,8 @@ nav.show .menu {
   left: 0;
 }
 
-nav.show .menu{
+nav.show .menu ul{
   display: grid;
-  place-content: center;
-
 }
 
 nav.show ul.grid{
@@ -217,12 +224,14 @@ nav .icon-close{
 
   position: absolute;
   right: 1.5rem;
-  
+  top: -1.5rem;
+  transition: .2s ;
 }
 
-nav.show .icon-close{
+nav.show div.icon-close{
   visibility: visible;
   opacity: 1;
+  top: 1.5rem;
 }
 /* * FIM - MENU * */
 
