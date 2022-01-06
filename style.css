@@ -129,6 +129,15 @@ body {
   width: 100%;
 }
 
+#header.scroll{
+  /* background: var(--base-color); */
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* #header.scroll .logo span i{
+  color: whitesmoke;
+} */
+
 main {
   margin-top: calc(var(--header-height) + 2rem);
 }
